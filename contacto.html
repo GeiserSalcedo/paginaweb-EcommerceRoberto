@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/index.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="contenedor_menu">
+            <nav>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="" />
+                </div>
+                <div class="menu menu active">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="hombres.html">Hombre</a></li>
+                        <li><a href="#">Mujer</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="contenedor_submenu">
+            <h6>Hasta un 50 % de descuento</h6>
+            <p>Ya están aquí las ofertas de fin de temporada. Comprar</p>
+        </div>
+    </header>
+    <main>
+
+        <section class="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form class="formulario" action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input onclick="enviarFormulario()" type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section class="contenedor_slider">
+            <h2>Últimos Diseños</h2>
+            <div class="slider">
+                <div class="slider_container">
+                    <img src="assets/slider/d1.jpg" alt="Imagen 1" class="slider_img" />
+                    <img src="assets/slider/d2.webp" alt="Imagen 1" class="slider_img" />
+                </div>
+
+                <button class="slider_arrow prev">
+                    <svg class="slider_svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                </button>
+                <button class="slider_arrow next">
+                    <svg class="slider_svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <h3>Páginas</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Estado del pedido</a></li>
+                    <li><a href="#">Envíos y entregas</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Acerca de Nike</h3>
+                <ul>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Inversores</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Únete a nosotros</h3>
+                <ul>
+                    <li><a href="#">Nike App</a></li>
+                    <li><a href="#">Nike Run Club App</a></li>
+                    <li><a href="#">Nike Training Club App</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
