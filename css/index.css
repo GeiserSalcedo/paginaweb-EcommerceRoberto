@@ -866,7 +866,7 @@ section.img_principal, section.productos {
     top: 90px;
     width: 100%;
     padding: 20px 0;
-    height: calc(100% - 90px);
+    height: calc(100% - 60px);
     overflow-y: auto;
     transition: letf 0.3s;    
   }
@@ -879,23 +879,16 @@ section.img_principal, section.productos {
   {
     background: none;
     text-decoration: none;
-    color: #09189e;
+    color: #030b52;
     
   }
 
   
   .menu .active
   {
-    background: none;
-    text-decoration: none;
-    color: transparent;
-   
-    
+    background: none;    
+    color: transparent;    
   }
-
-
-
-  
 
   .material-symbols-outlined{
     display: block;
