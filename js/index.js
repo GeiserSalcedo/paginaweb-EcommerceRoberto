@@ -1,10 +1,5 @@
-//codigo para activar el menu responsive
-const navToggle = document.querySelector(".material-symbols-outlined");
-const navMenu = document.querySelector(".nav-menu");
 
-navToggle.addEventListener("click", () => {
-	navMenu.classList.toggle("active");
-});
+
 
 
 
@@ -91,7 +86,7 @@ function ready(){
 	document.getElementsByClassName('carrito-precio-total').value=document.getElementsByClassName('precio-item').value;
 
 	//agregra funcion al boton de pagar
-	document.getElementsByClassName('btn-pagar')[0].addEventListener('click', pagarClicked);
+	document.getElementsByClassName('btn-pagar')[0].addEventListener('click', pagarClicked)
 
 
 }
@@ -229,6 +224,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
           </span>
         </div>
 	     `
+		 
 	item.innerHTML= itemCarritoContenido;
 	itemsCarrito.append(item);
 
@@ -267,3 +263,10 @@ function hacerVisibleCarrito(){
 	items.style.width = '60%';
 }
 
+//codigo para activar el menu responsive
+const navToggle = document.querySelector(".material-symbols-outlined");
+const navMenu = document.querySelector(".nav-menu");
+
+navToggle.addEventListener("click", () => {
+	navMenu.classList.toggle("active");
+});

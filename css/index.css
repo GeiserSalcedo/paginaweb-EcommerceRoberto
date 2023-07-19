@@ -8,10 +8,7 @@
   box-sizing: border-box;
   vertical-align: baseline;
 }
-
-
-  
-  
+ 
 
 
 /* Evitamos problemas con las imagenes */
@@ -25,8 +22,7 @@ figure {
   display: block;
 }
 
-.zapa{
-  
+.zapa{  
   width: 60px;
 }
 
@@ -233,8 +229,6 @@ body {
     
 }
 
-
-
 .logo img {
   width: 80px;
 }
@@ -268,8 +262,6 @@ body {
   display: none; 
   cursor: pointer; 
 }
-
-
 
 
 .contenedor_submenu {
@@ -840,7 +832,7 @@ section.img_principal, section.productos {
   scale: 1.05;
 }
 
-
+/*seccion responsive*/
 
 @media screen and (max-width:768px){
   .contenedor{
@@ -862,7 +854,7 @@ section.img_principal, section.productos {
     margin-right: 20px;
     background-color: #eeebeb;
     position: fixed;
-    left: 0;
+    left: -100%;
     top: 90px;
     width: 100%;
     padding: 20px 0;
@@ -882,18 +874,16 @@ section.img_principal, section.productos {
     color: #030b52;
     
   }
-
   
   .menu .active
   {
     background: none;    
-    color: transparent;    
+    
   }
 
   .material-symbols-outlined{
     display: block;
   }
-
    
   .active{
     left: 0;
@@ -909,10 +899,23 @@ section.img_principal, section.productos {
   }
   .animacion img{
     height: 80%;
-    width: 80%;
-    
-    
+    width: 85%;       
   }
+
+  .nuestras_aplicaciones{
+    font-size: 8px;
+  }
+  .nuestras_aplicaciones h2{
+    font-size: 8px;
+  }
+  .nuestras_aplicaciones p{
+    font-size: 8px;
+  }
+
+  .footer-container{
+    font-size: 8px;
+  }
+  
   
   
 }
