@@ -10,7 +10,6 @@
 }
 
 
-
   
   
 
@@ -223,35 +222,55 @@ body {
 .contenedor_menu {
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+    
 }
+
+
 
 .logo img {
   width: 80px;
 }
 
-nav .menu ul {
+
+.navbar .menu ul {
   display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  
 }
 
-nav .menu ul li {
+.navbar .menu ul li {
   margin: 0 15px;
   font-size: 18px;
   cursor: pointer;
 }
 
-nav .menu ul li:hover {
+.navbar .menu ul li:hover {
   border-bottom: 1px solid black;
 }
+
+.material-symbols-outlined{
+  color: #0c0b0b;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none; 
+  cursor: pointer; 
+}
+
+
+
 
 .contenedor_submenu {
   width: 100%;
@@ -303,6 +322,7 @@ nav .menu ul li:hover {
 
 .animacion {
   width: 100%;
+  
 }
 
 .animacion img {
@@ -384,8 +404,6 @@ nav .menu ul li:hover {
   right: 5%;
 }
 
-.slider_svg {}
-
 .slider_ul {
   width: 100%;
   /* background-color: aqua; */
@@ -400,7 +418,7 @@ nav .menu ul li:hover {
   gap: 1rem;
 }
 
-.slider_li {}
+
 
 .slider_btn {
   width: 2rem;
@@ -822,7 +840,7 @@ section.img_principal, section.productos {
   scale: 1.05;
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width:768px){
   .contenedor{
     display: block;
   }
@@ -830,9 +848,64 @@ section.img_principal, section.productos {
   .contenedor-items{
     width: 100% !important;
   }
+  .logo{
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .menu ul{ 
+    text-align: center;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: #9e9a9a;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: letf 0.3s;
+    
+  }
+
+  .menu li{
+    line-height: 40px;
+  }
+
+  .menu a:hover,
+  .menu .active
+  {
+    background: none;
+    color: #f7f4f4;
+  }
+
+  .material-symbols-outlined{
+    display: block;
+  }
+  
+  .active{
+    left: 0;
+    
+  }
 
   .carrito{
     width: 100%;
   }
+
+  .animacion{
+    margin:  0 0 40px 40px;
+  }
+  .animacion img{
+    height: 80%;
+    width: 80%;
+    
+    
+  }
+  
+  
 }
 

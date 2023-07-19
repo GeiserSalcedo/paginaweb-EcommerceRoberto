@@ -35,6 +35,14 @@ function enviarFormulario() {
 
 }
 
+//codigo para activar el menu responsive
+const navToggle = document.querySelector(".material-symbols-outlined");
+const navMenu = document.querySelector(".nav-menu");
+
+navToggle.addEventListener("click", () => {
+	navMenu.classList.toggle("active");
+});
+
 
 //variable que muestra el estado visible del carrito
 var carritoVisible = false;
@@ -79,7 +87,7 @@ function ready(){
 	document.getElementsByClassName('carrito-precio-total').value=document.getElementsByClassName('precio-item').value;
 
 	//agregra funcion al boton de pagar
-	document.getElementsByClassName('btn-pagar')[0].addEventListener('click', pagarClicked)
+	document.getElementsByClassName('btn-pagar')[0].addEventListener('click', pagarClicked);
 
 
 }
@@ -254,3 +262,4 @@ function hacerVisibleCarrito(){
 	var items = document.getElementsByClassName('contenedor-items')[0];
 	items.style.width = '60%';
 }
+
