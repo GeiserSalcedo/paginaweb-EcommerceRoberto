@@ -1,3 +1,13 @@
+//codigo para activar el menu responsive
+const navToggle = document.querySelector(".material-symbols-outlined");
+const navMenu = document.querySelector(".nav-menu");
+
+navToggle.addEventListener("click", () => {
+	navMenu.classList.toggle("active");
+});
+
+
+
 const sliderImg = document.querySelectorAll('.slider_img')
 const sliderNext = document.querySelector('.next')
 
@@ -35,13 +45,7 @@ function enviarFormulario() {
 
 }
 
-//codigo para activar el menu responsive
-const navToggle = document.querySelector(".material-symbols-outlined");
-const navMenu = document.querySelector(".nav-menu");
 
-navToggle.addEventListener("click", () => {
-	navMenu.classList.toggle("active");
-});
 
 
 //variable que muestra el estado visible del carrito

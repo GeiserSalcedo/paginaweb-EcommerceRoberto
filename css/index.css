@@ -858,7 +858,7 @@ section.img_principal, section.productos {
     text-align: center;
     flex-direction: column;
     margin-right: 20px;
-    background-color: #9e9a9a;
+    background-color: #dbd5d5;
     position: fixed;
     left: 0;
     top: 60px;
@@ -867,7 +867,7 @@ section.img_principal, section.productos {
     height: calc(100% - 60px);
     overflow-y: auto;
 
-    left: 100%;
+    
     transition: letf 0.3s;
     
   }
@@ -886,10 +886,11 @@ section.img_principal, section.productos {
   .material-symbols-outlined{
     display: block;
   }
-  
+
+   
   .active{
-    left: 0;
-    
+    display: block;
+        
   }
 
   .carrito{
